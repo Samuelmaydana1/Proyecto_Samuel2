@@ -8,7 +8,15 @@
 
 
 {% for curso in cursos %}
-    <li>Curso: {{ curso.nombre }} | Camada: {{ curso.camada }}</li>
+    {% comment %} <li>Curso: {{ curso.nombre }} | Camada: {{ curso.camada }}</li> {% endcomment %}
+    <div class="card" style="width: 18rem;">
+        <div class="card-header">
+            Curso: {{ curso.nombre }}
+        </div>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item">Camada: {{ curso.camada }}</li>
+        </ul>
+    </div>
 {% endfor %}
 
 
