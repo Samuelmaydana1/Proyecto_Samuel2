@@ -8,5 +8,8 @@ urlpatterns = [
     path('profesores/', views.profesores, name='Profesores'),
     path('entregables/', views.entregables, name='Entregables'),
     path('curso-formulario/', views.curso_formulario, name="CursoFormulario"),
-    path('form-con-api/', views.form_con_api, name="FormConApi")
+    path('estudiante-formulario/', views.estudiante_formulario, name="EstudianteFormulario"),
+    path('profesor-formulario/', views.profesor_formulario, name="ProfesorFormulario"),
+    path('entregable-formulario/', views.entregable_formulario, name="EntregableFormulario"),
+    path('buscar-form-con-api/', views.buscar_form_con_api, name="Buscar_Form_Con_Api"),
 ]
