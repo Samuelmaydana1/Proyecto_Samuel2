@@ -5,13 +5,13 @@ def inicio(request):
     return render(request, 'AppSamuel/index.html')
 
 def cursos(request):
-    return HttpResponse("Vista cursos")
-
-def profesores(request):
-    return HttpResponse("Vista profesores")
+    return render(request, 'AppSamuel/cursos.html')
 
 def estudiantes(request):
-    return HttpResponse("Vista estudiantes")
+    return render(request, 'AppSamuel/estudiantes.html')
+
+def profesores(request):
+    return render(request, 'AppSamuel/profesores.html')
 
 def entregables(request):
-    return HttpResponse("Vista entregables")
+    return render(request, 'AppSamuel/entregables.html')
