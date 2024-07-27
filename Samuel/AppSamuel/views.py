@@ -6,18 +6,6 @@ def inicio(request):
     return render(request, 'AppSamuel/index.html')
 
 def cursos(request):
-    return render(request, 'AppSamuel/cursos.html')
-
-def estudiantes(request):
-    return render(request, 'AppSamuel/estudiantes.html')
-
-def profesores(request):
-    return render(request, 'AppSamuel/profesores.html')
-
-def entregables(request):
-    return render(request, 'AppSamuel/entregables.html')
-
-def curso_formulario(request):
     if request.method == "POST":
         mi_formulario = CursoFormulario(request.POST) # Aqui me llega la informacion del html
         # print(miFormulario)
@@ -33,7 +21,7 @@ def curso_formulario(request):
 
     return render(request, "AppSamuel/form_con_api.html", {"mi_formulario": mi_formulario})
 
-def estudiante_formulario(request):
+def estudiantes(request):
     if request.method == "POST":
         mi_formulario = EstudianteFormulario(request.POST) # Aqui me llega la informacion del html
         # print(miFormulario)
@@ -49,7 +37,7 @@ def estudiante_formulario(request):
 
     return render(request, "AppSamuel/form_con_api.html", {"mi_formulario": mi_formulario})
 
-def profesor_formulario(request):
+def profesores(request):
     if request.method == "POST":
         mi_formulario = ProfesorFormulario(request.POST) # Aqui me llega la informacion del html
         # print(miFormulario)
@@ -65,7 +53,7 @@ def profesor_formulario(request):
 
     return render(request, "AppSamuel/form_con_api.html", {"mi_formulario": mi_formulario})
 
-def entregable_formulario(request):
+def entregables(request):
     if request.method == "POST":
         mi_formulario = EntregableFormulario(request.POST) # Aqui me llega la informacion del html
         # print(miFormulario)
