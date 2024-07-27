@@ -9,10 +9,6 @@
 ### estudiantes/ [name='Estudiantes']
 ### profesores/ [name='Profesores']
 ### entregables/ [name='Entregables']
-### curso-formulario/ [name='CursoFormulario']
-### estudiante-formulario/ [name='EstudianteFormulario']
-### profesor-formulario/ [name='ProfesorFormulario']
-### entregable-formulario/ [name='EntregableFormulario']
 ### buscar-form-con-api/ [name='Buscar_Form_Con_Api']
 
 ## Autor:Samuel Maydana
